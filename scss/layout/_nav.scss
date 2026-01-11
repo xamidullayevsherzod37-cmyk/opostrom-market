@@ -1,0 +1,18 @@
+.nav-container {
+  max-width: $max-width;
+  width: 100%;
+  padding: 28px 40px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-left: $border-side;
+  border-right: $border-side;
+  background-color: $color-white;
+  border-bottom: 1px solid $border-bottom;
+}
+
+.nav-catalogs {
+  display: flex;
+  gap: 8px;
+}

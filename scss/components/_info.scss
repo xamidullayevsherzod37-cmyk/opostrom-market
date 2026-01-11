@@ -1,0 +1,181 @@
+$padding: 40px;
+
+.info {
+  max-width: 1360px;
+  width: 50%;
+  background-color: $color-background;
+  border-radius: 16px;
+  margin-right: 32px;
+  h1 {
+    font-size: 40px;
+    padding: $padding;
+  }
+
+  h3,
+  h4 {
+    font-size: 16px;
+    padding: $padding;
+  }
+}
+
+.products-info {
+  display: flex;
+  gap: 20px;
+  align-items: end;
+  margin-bottom: 40px;
+  margin-top: 60px;
+  h1 {
+    font-size: 36px;
+    color: $color-black;
+    margin: 0;
+  }
+
+  h6 {
+    font-size: 16px;
+    color: $color-text-gray;
+  }
+}
+
+.contacts {
+  h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  .contact__with__us {
+    display: flex;
+    gap: 120px;
+    justify-content: space-between;
+    .address {
+      display: grid;
+      justify-content: space-between;
+      .companys-address {
+        h4 {
+          color: $color-text-gray;
+          margin-bottom: 4px;
+        }
+      }
+
+      .working-time {
+        h4 {
+          color: $color-text-gray;
+          margin-bottom: 4px;
+        }
+        .time {
+          margin-bottom: 4px;
+          span {
+            display: flex;
+            gap: 32px;
+          }
+        }
+      }
+
+      .contact__email {
+        h4 {
+          color: $color-text-gray;
+          margin-bottom: 4px;
+        }
+      }
+
+      .phone__number {
+        h4 {
+          color: $color-text-gray;
+          margin-bottom: 4px;
+        }
+      }
+
+      .masege {
+        h4 {
+          color: $color-text-gray;
+          margin-bottom: 12px;
+        }
+        .masege__btn {
+          display: flex;
+          gap: 8px;
+          button {
+            padding: 12px 20px;
+            background-color: $color-black;
+            color: $color-white;
+            border-radius: 8px;
+            &:hover {
+              background-color: $color-white;
+              color: $color-black;
+              border: 1px solid black;
+              transform: scale(1);
+            }
+          }
+        }
+      }
+
+      .social-media {
+        h4 {
+          color: $color-text-gray;
+          margin-bottom: 4px;
+        }
+        .social__media__btns {
+          display: flex;
+          gap: 8px;
+          button {
+            padding: 12px;
+            background-color: $color-white;
+            border: 1px solid rgba(233, 233, 233, 1);
+            border-radius: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.legal-info {
+  margin-top: 80px;
+  h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  .legal__info {
+    display: flex;
+    gap: 120px;
+    justify-content: space-between;
+    .production {
+      display: grid;
+      h4 {
+        font-size: 20px;
+        margin-bottom: 8px;
+      }
+      .production__info {
+        div {
+          margin: 4px;
+          padding-bottom: 16px;
+          border-bottom: 1px solid rgba(233, 233, 233, 1);
+          display: flex;
+          justify-content: space-between;
+          gap: 100px;
+          .span-1 {
+            color: $color-text-gray;
+          }
+        }
+      }
+    }
+
+    .sells {
+      display: grid;
+      h4 {
+        font-size: 20px;
+        margin-bottom: 8px;
+      }
+      .sells__info {
+        div {
+          margin: 4px;
+          padding-bottom: 16px;
+          border-bottom: 1px solid rgba(233, 233, 233, 1);
+          display: flex;
+          justify-content: space-between;
+          gap: 100px;
+          .span-1 {
+            color: $color-text-gray;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+// layout/_main.scss
+.main-container {
+  max-width: $max-width;
+  width: 100%;
+  padding: 16px 40px;
+  margin: 0 auto;
+  border-left: $border-side;
+  border-right: $border-side;
+}
+
+.processing {
+  padding: 60px 40px;
+}
+
+.your-grow {
+  padding: 60px 40px;
+}
+
+.we {
+  display: flex;
+  gap: $gap;
+}
+
+.products {
+  margin-top: 60px;
+}

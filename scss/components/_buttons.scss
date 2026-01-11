@@ -1,0 +1,203 @@
+.card {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: $color-background;
+  transition: 0.3s ease-in-out;
+  text-decoration-line: none;
+  color: $color-black;
+  &:hover {
+    background-color: $color-product-text-light;
+  }
+}
+.product {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: $color-background;
+  transition: $transition;
+  text-decoration-line: none;
+  color: $color-black;
+  &:hover {
+    background-color: $color-product-text-light;
+  }
+}
+.about {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: $color-background;
+  transition: $transition;
+  text-decoration-line: none;
+  color: $color-black;
+  &:hover {
+    background-color: $color-product-text-light;
+  }
+}
+.connect {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: $color-background;
+  transition: $transition;
+  text-decoration-line: none;
+  color: $color-black;
+  &:hover {
+    background-color: $color-product-text-light;
+  }
+}
+.search {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: $color-background;
+  transition: $transition;
+  &:hover {
+    background-color: $color-product-text-light;
+  }
+}
+.shop {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: $color-background;
+  transition: $transition;
+  &:hover {
+    background-color: $color-product-text-light;
+  }
+}
+.ask {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: $color-black;
+  color: $color-white;
+  transition: $transition;
+  text-decoration-line: none;
+  color: $color-white;
+  &:hover {
+    background-color: $color-product-text-light;
+    color: $color-black;
+  }
+}
+.product-btn {
+  padding: 12px 26px;
+  border-radius: 8px;
+  border: none;
+  background: $color-white;
+  color: $color-black;
+  font-size: 15px;
+  cursor: pointer;
+  transition: $transition;
+  text-decoration-line: none;
+  &:hover {
+    background: $color-black;
+    color: $color-white;
+  }
+}
+
+// Main
+.sponsors {
+  max-width: 1360px;
+  width: 40%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $gap;
+  align-items: center;
+  justify-content: center;
+  a {
+    background-color: $color-background;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 180px;
+    padding: 25px;
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    }
+  }
+}
+
+.hamburger__menu {
+  border: 1px solid $color-product-text-light;
+  width: 276px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 8px;
+  a {
+    padding: 12px 20px;
+    text-decoration: none;
+    color: $color-black;
+    border-bottom: 1px solid $color-product-text-light;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &.menu {
+      background-color: #2d2d2d;
+      color: #fff;
+      border-radius: 8px;
+    }
+  }
+}
+
+.cable__stripping {
+  width: 276px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  border: 1px solid $color-product-text-light;
+  a {
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s;
+    font-size: 14px;
+    font-weight: 500;
+    border-bottom: 1px solid $color-product-text-light;
+
+    &.active {
+      background-color: #1f2123;
+      color: #ffffff;
+      margin: 4px 0;
+    }
+
+    &:hover:not(.active) {
+      background-color: #f5f5f5;
+    }
+  }
+}
+
+.menu,
+.discount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cable-stripping-products {
+  display: flex;
+  gap: 40px;
+}
+
+.cable__stripping__btns {
+  display: flex;
+  gap: 8px;
+  .cable__stripping__btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+  }
+}
+
+.cable__stripping__cards {
+  display: grid;
+  gap: 32px;
+}

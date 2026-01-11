@@ -1,0 +1,240 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.product-tabs {
+  border-bottom: $border-side;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  position: sticky;
+  top: 0;
+  background: $color-white;
+
+  .tabs__list {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    padding: 0;
+
+    li {
+      .tabs__link {
+        text-decoration: none;
+        color: #888888;
+        font-size: 16px;
+        font-weight: 500;
+        padding-bottom: 15px;
+        display: inline-block;
+        border-bottom: $border-side;
+        transition: all 0.3s ease;
+
+        &:hover,
+        &.active {
+          color: $color-black;
+          border-bottom: 2px solid $color-black;
+        }
+      }
+    }
+  }
+}
+
+.product-description {
+  max-width: 800px;
+  display: flex;
+  gap: 100px;
+  justify-content: space-around;
+  .description {
+    width: 100%;
+    h2 {
+      margin-bottom: 20px;
+      font-size: 32px;
+    }
+    .text__about__product {
+      display: grid;
+      gap: 20px;
+    }
+  }
+
+  .specs {
+    width: 100%;
+    h2 {
+      margin-bottom: 40px;
+      font-size: 32px;
+    }
+    .specs__row {
+      margin-bottom: 60px;
+      .spec {
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+        gap: 200px;
+        border-bottom: 1px solid $color-text-gray;
+        font-size: 16px;
+        .spec-1 {
+          color: $color-text-gray;
+        }
+      }
+    }
+  }
+
+  .video {
+    width: 100%;
+    h2 {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .right__card {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: start;
+    a {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.2s ease;
+
+      &:hover {
+        transform: translateX(5px); // Hover bo'lganda ozgina siljiydi
+      }
+
+      .img__card,
+      img {
+        width: 48px;
+        height: 48px;
+        min-width: 48px; // Rasm kichrayib ketmasligi uchun
+        background: #fcfcfc;
+        border: 1px solid #f0f0f0;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+      }
+
+      div {
+        h4 {
+          font-size: 18px;
+          font-weight: 700;
+          margin: 0 0 5px 0;
+          color: #000;
+        }
+
+        h6 {
+          font-size: 14px;
+          font-weight: 400;
+          color: #888;
+          line-height: 1.4;
+          margin: 0;
+          width: 400px;
+        }
+      }
+    }
+  }
+}
+
+.about-us {
+  display: grid;
+  gap: 20px;
+  width: 590px;
+  h1 {
+    margin-top: 60px;
+    font-size: 40px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+.our-mode {
+  margin-top: 120px;
+  margin-bottom: 120px;
+  border-top: 1px solid rgba(233, 233, 233, 1);
+  display: flex;
+  gap: 16px;
+  span {
+    padding-top: 40px;
+    div {
+      margin-bottom: 20px;
+      font-size: 16px;
+      color: $color-text-gray;
+    }
+    h3 {
+      margin-bottom: 12px;
+      font-size: 40px;
+    }
+  }
+}
+
+.interest {
+  margin-top: 120px;
+  margin-bottom: 60px;
+
+  h1 {
+    font-size: 40px;
+  }
+  .our-interest {
+    display: flex;
+    gap: 120px;
+    .partner {
+      display: grid;
+      gap: 30px;
+      margin-top: 30px;
+      margin-right: 140px;
+      span {
+        display: grid;
+        gap: 12px;
+        h3 {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+.delivery-and-payment {
+  width: 800px;
+  display: grid;
+  column-gap: 60px;
+  h1 {
+    font-size: 40px;
+  }
+  .delivery__payment {
+    div {
+      margin-bottom: 60px;
+      h4 {
+        font-size: 24px;
+        margin-bottom: 24px;
+      }
+      .two__p {
+        p {
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+}
+
+.guarante {
+  width: 700px;
+  display: grid;
+  column-gap: 40px;
+  h1 {
+    font-size: 40px;
+    margin: 40px 0;
+  }
+  div {
+    margin-bottom: 60px;
+    h3 {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+}

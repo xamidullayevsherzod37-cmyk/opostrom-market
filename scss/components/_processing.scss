@@ -1,0 +1,40 @@
+$primary-color: #e74c3c;
+$hover-scale: 1.08;
+$transition: $transition;
+$gap: 1.5rem;
+$min-card-width: 280px;
+
+.processing-intro {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+.processing-info {
+  font-size: 20px;
+  color: $color-text-gray;
+  padding-bottom: 60px;
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  a {
+    text-decoration-line: none;
+    color: $color-black;
+    background-color: $color-background;
+    padding: 24px;
+    border-radius: 8px;
+    transition: $transition;
+
+    &:hover {
+      outline: 3px solid $color-text-gray;
+    }
+
+    h3 {
+      padding: 16px;
+    }
+  }
+}
