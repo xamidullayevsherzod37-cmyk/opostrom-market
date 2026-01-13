@@ -711,6 +711,14 @@ header {
   height: 300px;
 }
 
+@media (max-with: 1200px) {
+  .info {
+    width: 100%;
+  }
+  .sponsors {
+    width: 100%;
+  }
+}
 .processing-intro {
   font-size: 40px;
   padding-bottom: 20px;
@@ -1186,7 +1194,6 @@ html {
 }
 
 .product-description {
-  max-width: 800px;
   display: flex;
   gap: 100px;
   justify-content: space-around;
@@ -1203,6 +1210,7 @@ html {
   gap: 20px;
 }
 .product-description .specs {
+  margin-top: 120px;
   width: 100%;
 }
 .product-description .specs h2 {
