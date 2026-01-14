@@ -1,3 +1,8 @@
 body {
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
+}
+
+@font-face {
+  font-family: "Golos Text", sans-serif;
+  src: url("../../fonts/GolosText-Regular.ttf");
 }

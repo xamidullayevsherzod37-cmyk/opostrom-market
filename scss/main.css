@@ -4,12 +4,17 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: "Golos Text", sans-serif;
 }
 
 body {
-  font-family: "Golos Text";
+  font-family: "Golos Text", sans-serif;
 }
 
+@font-face {
+  font-family: "Golos Text", sans-serif;
+  src: url("../../fonts/GolosText-Regular.ttf");
+}
 header {
   position: sticky;
   top: 0;
