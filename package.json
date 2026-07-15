@@ -1,0 +1,25 @@
+{
+  "name": "okoprom-market",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "sass": "sass src/scss/main.scss src/scss/main.css --watch",
+    "sass:build": "sass src/scss/main.scss src/scss/main.css"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.23.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.2.25",
+    "@vitejs/plugin-react": "^4.3.0",
+    "sass": "^1.77.4",
+    "vite": "^5.2.11"
+  }
+}

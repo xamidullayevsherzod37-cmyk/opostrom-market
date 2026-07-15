@@ -1,0 +1,427 @@
+// Desktop overrides and default states
+.burger-menu-btn {
+  display: none;
+}
+
+// Typography & global scaling on small devices
+@media (max-width: 1200px) {
+  .info {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .sponsors {
+    width: 100%;
+  }
+
+  .we {
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container,
+  .main-container,
+  .nav-container,
+  .footer-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .product__wrapper {
+    flex-direction: column;
+    padding: 24px;
+    
+    .product__info {
+      width: 100%;
+    }
+    
+    .product__right {
+      width: 100%;
+      margin-top: 32px;
+      justify-content: center;
+      
+      .product__img img {
+        width: 100%;
+        max-width: 450px;
+      }
+    }
+  }
+
+  .product__cards,
+  .product__card__name .products__card {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    
+    .cards, .card {
+      width: 100%;
+      max-width: 320px;
+    }
+  }
+
+  .parts .parts-card {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    
+    .part__card {
+      width: 100%;
+      max-width: 280px;
+      
+      .buy {
+        padding: 12px 20px;
+      }
+    }
+  }
+
+  .legal-info .legal__info {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .about-us {
+    width: 100%;
+  }
+
+  .our-mode {
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    span {
+      padding-top: 20px;
+    }
+  }
+
+  .interest {
+    margin-top: 60px;
+    .our-interest {
+      flex-direction: column;
+      gap: 40px;
+      .partner {
+        margin-right: 0;
+        margin-top: 0;
+      }
+      img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+      }
+    }
+  }
+
+  .product-description {
+    flex-direction: column;
+    gap: 40px;
+    
+    .specs {
+      margin-top: 40px;
+      .specs__row {
+        margin-bottom: 30px;
+        .spec {
+          gap: 20px;
+        }
+      }
+    }
+
+    .right__card {
+      width: 100%;
+      a div h6 {
+        width: 100%;
+      }
+    }
+  }
+
+  .delivery-and-payment {
+    width: 100%;
+    .delivery__payment div {
+      margin-bottom: 40px;
+    }
+  }
+
+  .guarante {
+    width: 100%;
+    div {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  // Mobile Header & Burger menu
+  .header-left-links {
+    display: none !important; // Hide desktop navigation links
+  }
+
+  .burger-menu-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+
+    .burger-bar {
+      width: 100%;
+      height: 2px;
+      background-color: #000;
+      transition: all 0.3s ease;
+      
+      &.open {
+        &:nth-child(1) {
+          transform: translateY(8px) rotate(45deg);
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:nth-child(3) {
+          transform: translateY(-8px) rotate(-45deg);
+        }
+      }
+    }
+  }
+
+  // Mobile navigation drawer
+  .nav-bar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    z-index: 1000;
+    padding-top: 80px;
+    overflow-y: auto;
+
+    &.mobile-open {
+      right: 0;
+    }
+
+    .nav-container {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 32px;
+      border: none;
+      padding: 24px;
+      
+      .nav-catalogs {
+        flex-direction: column;
+        width: 100%;
+        gap: 16px;
+        
+        a {
+          font-size: 18px;
+          padding: 8px 0;
+          display: block;
+          width: 100%;
+        }
+      }
+      
+      .nav-shop {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        
+        .ask {
+          width: 100%;
+          text-align: center;
+          padding: 12px;
+        }
+      }
+    }
+  }
+
+  // Hero Card
+  .product-card {
+    flex-direction: column;
+    padding: 24px;
+    
+    .product-left {
+      width: 100%;
+    }
+    
+    .product-right {
+      width: 100%;
+      margin-top: 24px;
+      
+      img {
+        height: auto;
+        max-height: 250px;
+      }
+    }
+  }
+
+  .processing-intro {
+    font-size: 28px;
+  }
+  
+  .processing-info {
+    font-size: 16px;
+    br { display: none; }
+  }
+
+  .boxes {
+    a {
+      flex: 1 1 calc(50% - 16px);
+      min-width: 140px;
+      padding: 16px;
+      
+      h3 {
+        padding: 8px 0;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .our-benefits {
+    grid-template-columns: 1fr;
+    
+    a {
+      max-width: 100%;
+    }
+  }
+
+  // Catalog layouts
+  .cataog-products, .cable-stripping-products {
+    flex-direction: column;
+    gap: 24px;
+    
+    .hamburger-menu, .hamburgers-menu {
+      width: 100%;
+      
+      .hamburger__menu, .cable__stripping {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 8px;
+        
+        a {
+          flex: 1 1 auto;
+          text-align: center;
+          padding: 8px 12px;
+          font-size: 13px;
+          border: 1px solid #eee;
+          border-radius: 4px;
+          
+          img { display: none; }
+        }
+      }
+    }
+  }
+
+  .contacts .contact__with__us {
+    flex-direction: column;
+    gap: 40px;
+    
+    .map iframe {
+      height: 350px;
+    }
+  }
+
+  // Feedback form
+  .feedback__container {
+    flex-direction: column;
+    gap: 32px;
+    padding: 24px;
+    
+    .feedback__info {
+      width: 100%;
+      text-align: center;
+      
+      br { display: none; }
+    }
+    
+    .feedback__form {
+      width: 100%;
+    }
+  }
+
+  // Footer layout
+  .footer-container {
+    flex-direction: column;
+    gap: 40px;
+    
+    .footer-nav {
+      flex-direction: column;
+      gap: 32px;
+      width: 100%;
+    }
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    
+    .footer-social-icons {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+    .footer-copy {
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  h1, .processing-intro, .your-grow h1, .about-us h1, .contacts h1, .legal-info h1 {
+    font-size: 24px !important;
+    margin-bottom: 24px;
+    br { display: none; }
+  }
+
+  .product-title {
+    font-size: 24px;
+    br { display: none; }
+  }
+
+  .product__cards,
+  .product__card__name .products__card,
+  .parts .parts-card {
+    grid-template-columns: 1fr;
+  }
+
+  .boxes a {
+    flex: 1 1 100%;
+  }
+
+  .product__btns {
+    flex-direction: column;
+    
+    button {
+      width: 100%;
+    }
+  }
+
+  .product__iformation {
+    width: 100% !important;
+  }
+
+  .product-tabs .tabs__list {
+    flex-direction: column;
+    gap: 8px;
+    
+    li, button {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .legal__info {
+    .production__info div, .sells__info div {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+    }
+  }
+}
